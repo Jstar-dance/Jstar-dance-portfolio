@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J STAR | Dance Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #f5f5f5;
+      line-height: 1.7;
+    }
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+    .logo { letter-spacing: 4px; font-weight: bold; }
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+    .hero {
+      min-height: 75vh;
+      padding: 100px 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(120deg, #222, #111 70%);
+    }
+    .tag { color: #c6a66b; letter-spacing: 3px; }
+    h1 { font-size: clamp(48px, 10vw, 100px); line-height: 1; margin: 20px 0; }
+    h2 { font-size: 32px; }
+    .hero p { max-width: 550px; color: #ccc; }
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      background: #c6a66b;
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+      width: fit-content;
+    }
+    section { padding: 65px 8%; border-bottom: 1px solid #292929; }
+    .muted { color: #bbb; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #1c1c1c;
+      padding: 24px;
+      border: 1px solid #333;
+    }
+    .card h3 { color: #c6a66b; }
+    footer { padding: 30px 8%; color: #aaa; text-align: center; }
+    @media (max-width: 600px) {
+      header { flex-direction: column; gap: 12px; }
+      nav a { margin: 0 7px; }
+      .hero { min-height: 60vh; padding-top: 70px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">J STAR</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="tag">DANCER · CHOREOGRAPHER · INSTRUCTOR</div>
+      <h1>J STAR<span style="color:#c6a66b">.</span></h1>
+      <p>
+        Movement is my language. Dance is my way of telling stories,
+        building confidence and inspiring the next generation.
+      </p>
+      <a class="button" href="#about">DISCOVER MY JOURNEY ↘</a>
+    </div>
+
+    <section id="about">
+      <div class="tag">01 / ABOUT</div>
+      <h2>The Art of Movement</h2>
+      <p class="muted">
+        A dedicated dancer and dance instructor with extensive dance
+        experience, committed to developing creativity, confidence and
+        performance skills through movement.
+      </p>
+      <p class="muted">
+        My journey continues through training, teaching, performances
+        and learning from the dance community.
+      </p>
+    </section>
+
+    <section id="skills">
+      <div class="tag">02 / SPECIALITIES</div>
+      <h2>Dance Styles</h2>
+      <div class="grid">
+        <div class="card"><h3>01</h3><h2>Hip-Hop</h2><p class="muted">Rhythm, energy and expression.</p></div>
+        <div class="card"><h3>02</h3><h2>Freestyle</h2><p class="muted">Creativity and individual movement.</p></div>
+        <div class="card"><h3>03</h3><h2>Breaking</h2><p class="muted">Power, technique and control.</p></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="tag">03 / EXPERIENCE</div>
+      <h2>Teaching & Performance</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Dance Education</h3>
+          <p class="muted">Teaching students and helping them develop dance skills, teamwork and stage confidence.</p>
+        </div>
+        <div class="card">
+          <h3>Stage Performances</h3>
+          <p class="muted">Performances, choreography and participation in dance events.</p>
+        </div>
+        <div class="card">
+          <h3>Student Achievements</h3>
+          <p class="muted">Add verified competition results, awards and performance highlights here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="tag">04 / CONNECT</div>
+      <h2>Let's Create Something.</h2>
+      <p class="muted">For dance classes, workshops, performances and collaborations.</p>
+      <p class="muted">Add your professional email and social media links here.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 J STAR · Dance Portfolio</footer>
+</body>
+</html>
